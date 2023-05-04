@@ -5,8 +5,9 @@ img {
     width: 760px;
     height: auto;
     background-color: grey;
-    display: inline-block;
+    display: block;
     padding: 20px;
+    margin: 10px auto;
 }
 #gittext {
     display: flex;
