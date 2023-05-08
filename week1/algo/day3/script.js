@@ -1,7 +1,16 @@
-var countPositives = 0;
-var numbers = [3, 4, -2, 7, 16, -8, 0]; 
-// your code here!
-for(var i=0;i<numbers.length;i++){
-    if(numbers[i]>=0){countPositives++;}
+function reverse(arr) {
+    var start = 0;
+    var end = arr.length - 1;
+    var temp;
+    while (start < end) {
+        temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+    return arr;
 }
-console.log("there are " + countPositives + " positive values");
+
+console.log  (reverse(["a", "b", "c", "d", "e"]));
+
